@@ -28,7 +28,7 @@
     
     d)  `$ less sequences.fa`   (Remember, `q` is quit in less)
     
-- Use `less` to *find the sequences* that contains the description EAS20_ 8_ 6_ 1_  5_388 (Type `h` in less for help screen, look for “Search forward…” in the “SEARCHING” section.).
+- Use `less` to *find the sequences* that contains the description EAS20\_8\_6\_1\_5_388 (Type `h` in less for help screen, look for “Search forward…” in the “SEARCHING” section.).
     
 - Use `head` to display the first sequence only (first two lines). Type `$ man head` (or Google) to find the option to limit the number of lines `head` displays (man pages open in `less`, use the arrow keys to navigate and `q` to quit).
     
