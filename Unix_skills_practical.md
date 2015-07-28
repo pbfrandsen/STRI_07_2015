@@ -55,7 +55,7 @@
 **Try these:**
 
 - `man grep`
-􏰀 Everything you need to know. 􏰀
+Everything you need to know.
 
 - `grep 'EAS' sequences.fa`
 - `grep 'Contig' sequences.fa`
@@ -71,23 +71,25 @@
 `grep -ir 'conTIG' ./`
 
 - grep -A: show lines after the grep hit
-`grep -i -A 1 'contig' sequences.fa` Useful if the sequences are in one line. 􏰀
+`grep -i -A 1 'contig' sequences.fa` Useful if the sequences are in one line.
 
     - Also try:
-        - `grep -B 10 '<searchterm>' <filename>` (10 lines Before)􏰀
+        - `grep -B 10 '<searchterm>' <filename>` (10 lines Before)
         - `grep -C 5 '<searchterm>' <filename>` (5 lines of Context)
         - Combinations are possible: `grep -A 1 -B 2 '<searchterm>' <filename>` (1 line After, 2 lines Before the hit)
 
 >   B. Output redirection: > (write to file)
 
 - `grep 'Contig' sequences.fa > selection.fa`
-􏰀Creates a file,if it does not exists.
-􏰀Writes the output into the file. *Caution: existing content will be overwritten. Do not write to the same file that you read from.*
+
+Creates a file, if it does not exist.
+Then writes the output into the file. *Caution: existing content will be overwritten. Do not write to the same file that you read from.*
 
 - `grep 'Contig' sequences.fa >> selection.fa`
-􏰀Creates a file, if it does not exists.
-􏰀Appends the output to the end of thef ile.
-􏰀Existing content is not overwritten. Rather, the file grows. (You should still not write to the same file that you read from.)
+
+Creates a file, if it does not exist.
+Appends the output to the end of the file.
+Existing content is not overwritten. Rather, the file grows. (You should still not write to the same file that you read from.)
 
 ### Working with FASTA files
 
@@ -104,27 +106,30 @@ Tip: individual sequences are identified by their headers. Header lines in a FAS
 > B. Output redirection: | (pipe)
 
 - `ls -1 | wc -l`
-􏰀 
-‘Pipes' the output of  `ls -1` into the input of `wc -l`. 􏰀 Prints out the number of items in this directory.
-􏰀 No temporary file necessary.
+
+‘Pipes' the output of  `ls -1` into the input of `wc -l`. Prints out the number of items in this directory.
+No temporary file necessary.
 
 - `grep '>' sequences.fa | less`
-􏰀 'Pipes' the output of grep into the input of less.
-􏰀 Allows to comfortably read the list of headers in a FASTA file. 􏰀 No temporary file necessary.
- 
-    - Displayed using  less:
-􏰀Search using `/`
-􏰀Quit with `q`
+    - 'Pipes' the output of grep into the input of less.
+    - Allows to comfortably read the list of headers in a FASTA file.
+    - No temporary file necessary.
+    - Displayed using `less`:
+Search using `/`
+Quit with `q`
 
 - **Exercise: filter;**
-􏰀 Output the first five headers in a FASTA file
+
+Output the first five headers in a FASTA file
 
 - **Exercise: one specific line;**
+
 Output line number 19 of a given file.
 
 - **Exercise: collecting sequences;**
-􏰀 Save the first three and the last three headers from a FASTA file in a new file.
-􏰀 _Hint_: you may use two commands
+
+Save the first three and the last three headers from a FASTA file in a new file.
+_Hint_: you may use two commands
 
 
 ### Managing Files
@@ -133,7 +138,7 @@ Output line number 19 of a given file.
 
 `tar -cvf new_tar_archive.tar <list>`
 
-- `tar` → tape archive 􏰀 
+- `tar` → tape archive
 - `c`: create new archive
 - `v`: verbose output
 - `f`: file to use; can take files and directories as arguments
